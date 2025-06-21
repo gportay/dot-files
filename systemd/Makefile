@@ -3,8 +3,9 @@ all:
 
 .PHONY: user-install
 user-install:
+	install -D -m644 user/swayidle.service $(DESTDIR)$(HOME)/.config/systemd/user/swayidle.service
 	install -D -m644 user/waybar.service $(DESTDIR)$(HOME)/.config/systemd/user/waybar.service
 
 .PHONY: post-install
 post-install:
-	systemctl --user enable waybar.service
+	systemctl --user enable swayidle.service waybar.service

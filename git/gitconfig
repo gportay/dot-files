@@ -3,6 +3,7 @@
 	name = Gaël PORTAY
 [alias]
 	amend = commit --amend
+	autosquash = rebase -i --autosquash --autostash
 	br = branch
 	bra = branch -a
 	brr = branch -r
@@ -10,6 +11,7 @@
 	ci = commit
 	co = checkout
 	cob = checkout -b
+	fixup = "!f() { git commit --fixup=${1:-HEAD}; }; f"
 	oneline = log --oneline
 	sign-off = commit --amend --signoff
 	st = status

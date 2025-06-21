@@ -13,3 +13,5 @@
 	oneline = log --oneline
 	sign-off = commit --amend --signoff
 	st = status
+[rebase]
+	autoStash = true

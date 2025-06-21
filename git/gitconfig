@@ -1,3 +1,15 @@
 [user]
 	email = gael.portay@gmail.com
 	name = Gaël PORTAY
+[alias]
+	amend = commit --amend
+	br = branch
+	bra = branch -a
+	brr = branch -r
+	cached = diff --cached
+	ci = commit
+	co = checkout
+	cob = checkout -b
+	oneline = log --oneline
+	sign-off = commit --amend --signoff
+	st = status

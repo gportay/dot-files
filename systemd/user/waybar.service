@@ -1,0 +1,13 @@
+[Unit]
+Description=Waybar
+Documentation=man:waybar(5)
+PartOf=graphical-session.target
+After=sway.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/waybar
+Restart=on-failure
+
+[Install]
+WantedBy=sway-session.target

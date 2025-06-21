@@ -13,6 +13,7 @@
 	cob = checkout -b
 	fixup = "!f() { git commit --fixup=${1:-HEAD}; }; f"
 	oneline = log --oneline
+	reword = commit --amend
 	sign-off = commit --amend --signoff
 	st = status
 [pull]

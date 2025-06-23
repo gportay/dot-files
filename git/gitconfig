@@ -13,6 +13,8 @@
 	cob = checkout -b
 	fixup = "!f() { git commit --fixup=${1:-HEAD}; }; f"
 	oneline = log --oneline
+	reauthor = commit --amend --author 'Gaël PORTAY <gael.portay@gmail.com>'
+	redate = "!f() { git commit --amend --date \"${*:-$(date --rfc-email)}\"; }; f"
 	reword = commit --amend
 	sign-off = commit --amend --signoff
 	st = status

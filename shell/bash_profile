@@ -1,0 +1,8 @@
+#
+# ~/.bash_profile
+#
+
+# gportay
+echo "$0" "$@" ~/.bash_profile >&2
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc

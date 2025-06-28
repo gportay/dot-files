@@ -1,0 +1,7 @@
+[Unit]
+Description=Test Watchdog
+
+[Service]
+Type=notify
+ExecStart=/bin/bash -c 'export; echo "$$$$"; echo; echo; echo; systemd-notify "READY=1"; while sleep 10; do systemd-notify "WATCHDOG=1"; done'
+WatchdogSec=15

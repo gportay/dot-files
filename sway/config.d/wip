@@ -1,0 +1,24 @@
+for_window [app_id="galculator"] floating enable
+assign [class="firefox"] 6
+
+
+bindsym XF86Standby exec notify-send -t 3000 -a XF86Standby XF86Standby
+bindsym XF86Sleep exec notify-send -t 3000 -a XF86Sleep XF86Sleep
+bindsym XF86LaunchB exec notify-send -t 3000 -a XF86LaunchB XF86LaunchB
+bindsym XF86Launch0 exec notify-send -t 3000 -a XF86Launch0 XF86Launch0
+bindsym XF86LaunchC exec notify-send -t 3000 -a XF86LaunchC XF86LaunchC
+#bindsym XF86AudioMute exec notify-send -t 3000 -a XF86AudioMute XF86AudioMute
+#bindsym XF86AudioLowerVolume exec notify-send -t 3000 -a XF86AudioLowerVolume XF86AudioLowerVolume
+#bindsym XF86AudioRaiseVolume  exec notify-send -t 3000 -a XF86AudioRaiseVolume  XF86AudioRaiseVolume 
+bindsym XF86AudioPause exec notify-send -t 3000 -a XF86AudioPause XF86AudioPause
+#bindsym XF86AudioNext exec notify-send -t 3000 -a XF86AudioNext XF86AudioNext
+#bindsym XF86AudioPrev exec notify-send -t 3000 -a XF86AudioPrev XF86AudioPrev
+bindsym XF86AudioStop exec notify-send -t 3000 -a XF86AudioStop XF86AudioStop
+#bindsym XF86Lock exec notify-send -t 3000 -a XF86Lock XF86Lock
+bindsym XF86Eject exec notify-send -t 3000 -a XF86Eject XF86Eject
+bindsym XF86Calculator exec notify-send -t 3000 -a XF86Calculator XF86Calculator
+bindsym XF86HomePage exec notify-send -t 3000 -a XF86HomePage XF86HomePage
+bindsym XF86Mail exec notify-send -t 3000 -a XF86Mail XF86Mail
+bindsym XF86Back exec notify-send -t 3000 -a XF86Back XF86Back
+bindsym XF86Forward exec notify-send -t 3000 -a XF86Forward XF86Forward
+bindsym XF86Favorites exec notify-send -t 3000 -a XF86Favorites XF86Favorites

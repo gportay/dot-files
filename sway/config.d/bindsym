@@ -1,0 +1,40 @@
+# gportay: https://wiki.archlinux.org/title/sway#Custom_keybindings
+#          https://github.com/xkbcommon/libxkbcommon/blob/master/include/xkbcommon/xkbcommon-keysyms.h
+#          wev
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
+
+bindsym --locked XF86Display exec notify-send -t 3000 -a sway "TODO XF86Display"
+bindsym --locked XF86NotificationCenter exec notify-send -t 3000 -a sway "TODO XF86NotificationCenter"
+bindsym --locked XF86PickupPhone exec notify-send -t 3000 -a sway "TODO XF86PickupPhone"
+bindsym --locked XF86HangupPhone exec notify-send -t 3000 -a sway "TODO XF86HangupPhone"
+#bindsym --locked XF86Favourites exec notify-send -t 3000 -a sway "TODO XF86Favourites"
+
+# On Lenovo ThinkPad TrackPoint II
+bindsym --locked XF86Search exec $menu
+bindsym --locked XF86Launch1 exec $menu
+bindsym --locked XF86ScreenSaver exec swaylock -f -c 000000
+# FIXME bindsym --locked XF86Favourites exec notify-send -t 3000 -a sway "XF86Favourites"
+
+# On Lenovo ThinkPad X230 (only)
+#bindsym --locked XF86Display exec notify-send -t 3000 -a sway "TODO bindsym XF86Display to wl-recorder or whatsover"
+#bindsym --locked XF86WebCam  exec  notify-send -t 3000 -a sway "TODO bindsym XF86WebCam to wl-recorder or whatsover"
+#bindsym --locked XF86WakeUp  exec notify-send -t 3000 -a sway "TODO binsym XF86WakeUp"
+
+# Move workspace to left/right output
+bindsym $mod+m       move workspace to output right
+bindsym $mod+Shift+m move workspace to output left
+
+# Move workspace to up/down output
+bindsym $mod+n       move workspace to output up
+bindsym $mod+Shift+n move workspace to output down
+
+# Start file manager
+bindsym $mod+backslash exec $term -e "nnn"
+
+# Lock session
+bindsym $mod+Mod1+Control+l exec "swaylock --color 000000ff"
+
+# FIXME
+#bindsym $mod+Shift+W exec "wayrecorder"

@@ -1,0 +1,5 @@
+# gportay: https://wiki.archlinux.org/title/Screen_capture#Wayland
+# FIXME bindsym Print exec grimshot --notify save screen
+bindsym Shift+Print exec grimshot --notify save active
+bindsym $mod+Print exec grimshot --notify save window
+bindsym $mod+Shift+Print exec grimshot --notify save area

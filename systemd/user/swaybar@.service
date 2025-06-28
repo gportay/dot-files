@@ -1,0 +1,15 @@
+# gportay: https://blog.ongy.net/posts/sway-and-systemd-details/#swaybarservice
+
+[Unit]
+Description=Swaybar to trigger idle actions
+Documentation=man:swaybar(1)
+PartOf=graphical-session.target
+After=sway.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swaybar --bar_id %i
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

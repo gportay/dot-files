@@ -1,1 +1,7 @@
+#exec systemctl --user import-environment
+#exec systemd-notify --ready
+# FIXME:
+# exec_always systemctl --user set-environment SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/user-agent.socket
+# exec_always systemctl --user import-environment SSH_AUTH_SOCK
+# exec_always systemctl --user import-environment
 exec_always systemctl --user start sway-session.target

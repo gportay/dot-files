@@ -1,0 +1,13 @@
+# gportay: https://wiki.archlinux.org/title/sway#Manage_Sway-specific_daemons_with_systemd
+
+[Unit]
+Description=Dynamic output configuration for Wayland compositors
+Documentation=https://sr.ht/~emersion/kanshi
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kanshi
+
+[Install]
+WantedBy=sway-session.target

@@ -1,0 +1,8 @@
+# gportay:
+bindswitch --reload --locked lid:on  output 'BOE 0x0964 Unknown' disable
+bindswitch --reload --locked lid:off output 'BOE 0x0964 Unknown' enable
+
+output 'AOC 24G2W1G5 0x00001B81' pos 0 0
+output 'AOC 24G2W1G3- TEKNA1A001385' pos 1920 -380 transform 90
+output 'BOE 0x0964 Unknown' pos 3000 0
+

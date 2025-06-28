@@ -1,0 +1,4 @@
+# gportay: https://github.com/emersion/xdg-desktop-portal-wlr#running
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# TODO: See https://gitlab.com/jamedjo/gnome-dbus-emulation-wlr for zoom application

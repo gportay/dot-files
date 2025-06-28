@@ -1,0 +1,5 @@
+assign [class="firefox"] 6
+assign [class="Slack"] 10
+assign [class="Microsoft Teams - Preview"] 9
+for_window [app_id="galculator"] floating enable
+#for_window [class="Aruco_detector_single"] floating disable

@@ -1,0 +1,3 @@
+# gportay: https://wiki.archlinux.org/title/sway#Clipboard
+
+exec wl-paste -t text --watch clipman store --no-persist

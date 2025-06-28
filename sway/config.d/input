@@ -1,0 +1,17 @@
+# gportay: https://wiki.archlinux.org/title/sway#Keymap
+
+# localectl list-x11-keymap-variants
+input * {
+    xkb_layout "us"
+    #xkb_variant "mac"
+}
+
+input "6127:24647:Lenovo_ThinkPad_Compact_USB_Keyboard_with_TrackPoint" {
+    #left_handed enabled
+    #tap enabled
+    #natural_scroll disabled
+    #dwt enabled
+    #accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+    #pointer_accel -0.25  # set mouse sensitivity (between -1 and 1)
+    pointer_accel 0.5  # set mouse sensitivity (between -1 and 1)
+}

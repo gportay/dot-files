@@ -1,0 +1,24 @@
+[Unit]
+Description=containerd (Rootless)
+Requires=dbus.socket
+
+[Service]
+Environment=PATH=/usr/bin:/sbin:/usr/sbin:/usr/lib/ccache/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/aarch64-glibc-bleeding-edge/bin:/opt/aarch64-musl-bleeding-edge/bin:/opt/aarch64be-glibc-bleeding-edge/bin:/opt/aarch64be-musl-bleeding-edge/bin:/opt/armebv7-eabihf-glibc-bleeding-edge/bin:/opt/armebv7-eabihf-musl-bleeding-edge/bin:/opt/armv5-eabi-glibc-bleeding-edge/bin:/opt/armv5-eabi-musl-bleeding-edge/bin:/opt/armv7-eabihf-glibc-bleeding-edge/bin:/opt/armv7-eabihf-musl-bleeding-edge/bin:/usr/lib/jvm/default/bin:/opt/mips-buildroot-linux-gnu_sdk-buildroot/bin:/opt/mips32-glibc-bleeding-edge/bin:/opt/mips32-musl-bleeding-edge/bin:/opt/mips32el-glibc-bleeding-edge/bin:/opt/mips32el-musl-bleeding-edge/bin:/opt/mips64-buildroot-linux-gnu_sdk-buildroot/bin:/opt/mips64-buildroot-linux-musl_sdk-buildroot/bin:/opt/mips64el-buildroot-linux-gnu_sdk-buildroot/bin:/opt/mipsel-buildroot-linux-musl_sdk-buildroot/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/powerpc-440fp-glibc-bleeding-edge/bin:/opt/powerpc-440fp-musl-bleeding-edge/bin:/opt/powerpc-buildroot-linux-gnu_sdk-buildroot/bin:/opt/powerpc64-buildroot-linux-gnu_sdk-buildroot/bin:/opt/powerpc64-power8-musl-bleeding-edge/bin:/opt/powerpc64le-power8-glibc-bleeding-edge/bin:/opt/powerpc64le-power8-musl-bleeding-edge/bin:/opt/riscv32-ilp32d-glibc-bleeding-edge/bin:/opt/riscv64-lp64d-glibc-bleeding-edge/bin:/opt/riscv64-lp64d-musl-bleeding-edge/bin:/opt/s390x-buildroot-linux-musl_sdk-buildroot/bin:/opt/s390x-z13-glibc-bleeding-edge/bin:/opt/s390x-z13-musl-bleeding-edge/bin:/opt/toolchain-mipsel_24kc_gcc-8.4.0_musl/bin:/home/gportay/.local/bin:/home/gportay/src/git-wrappers
+Environment=CONTAINERD_ROOTLESS_ROOTLESSKIT_FLAGS=
+ExecStart=/usr/bin/containerd-rootless.sh
+ExecReload=/bin/kill -s HUP $MAINPID
+TimeoutSec=0
+RestartSec=2
+Restart=always
+StartLimitBurst=3
+StartLimitInterval=60s
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+TasksMax=infinity
+Delegate=yes
+Type=simple
+KillMode=mixed
+
+[Install]
+WantedBy=default.target

@@ -3,6 +3,12 @@ all:
 
 .PHONY: user-install
 user-install:
+	if test -e $(DESTDIR)$(HOME)/.profile; then \
+		if test ! -e $(DESTDIR)$(HOME)/.profile.orig; then \
+			cp $(DESTDIR)$(HOME)/.profile $(DESTDIR)$(HOME)/.profile.orig; \
+		fi; \
+		sed '$$asource ~/.config/profile' $(DESTDIR)$(HOME)/.profile.orig >$(DESTDIR)$(HOME)/.profile; \
+	fi
 	if test -e $(DESTDIR)$(HOME)/.bashrc; then \
 		if test ! -e $(DESTDIR)$(HOME)/.bashrc.orig; then \
 			cp $(DESTDIR)$(HOME)/.bashrc $(DESTDIR)$(HOME)/.bashrc.orig; \

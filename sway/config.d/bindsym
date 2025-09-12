@@ -1,3 +1,4 @@
+### Key bindings
 #
 # Move around workspaces:
 #
@@ -8,3 +9,9 @@
 	# Move workspace to up/down output
 	bindsym $mod+n move workspace to output up
 	bindsym $mod+Shift+n move workspace to output down
+
+#
+# Applications
+#
+	# Lock session
+	bindsym $mod+Mod1+Control+l exec "swaylock --color 000000ff"

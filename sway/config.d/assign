@@ -1,0 +1,4 @@
+assign [class="Microsoft Teams - Preview"] 9
+assign [class="Slack"] 9
+assign [app_id="chromium"] 10
+assign [app_id="firefox"] 10

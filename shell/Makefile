@@ -25,3 +25,7 @@ user-install:
 	install -D -m644 profile.d/05-path.sh $(DESTDIR)$(HOME)/.config/profile.d/05-path.sh
 	install -D -m644 profile.d/10-editor.sh $(DESTDIR)$(HOME)/.config/profile.d/10-editor.sh
 	install -D -m644 profile.d/80-ssh-agent.sh $(DESTDIR)$(HOME)/.config/profile.d/80-ssh-agent.sh
+
+.PHONY: system-install
+system-install:
+	install -D -m644 profile.d/06-debian-foot-force-color-prompt.sh $(DESTDIR)/etc/profile.d/06-debian-foot-force-color-prompt.sh

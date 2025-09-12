@@ -1,0 +1,5 @@
+bindswitch --reload --locked lid:on  output eDP-1 disable
+bindswitch --reload --locked lid:off output eDP-1 enable
+
+# output eDP-1 pos 0 0
+# output HDMI-A-1 pos -1920 0 res 1920x1080

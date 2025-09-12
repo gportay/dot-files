@@ -25,6 +25,7 @@ user-install:
 	install -D -m644 profile.d/05-path.sh $(DESTDIR)$(HOME)/.config/profile.d/05-path.sh
 	install -D -m644 profile.d/10-editor.sh $(DESTDIR)$(HOME)/.config/profile.d/10-editor.sh
 	install -D -m644 profile.d/20-ccache.sh $(DESTDIR)$(HOME)/.config/profile.d/20-ccache.sh
+	install -D -m644 profile.d/30-buildroot.sh $(DESTDIR)$(HOME)/.config/profile.d/30-buildroot.sh
 	install -D -m644 profile.d/80-ssh-agent.sh $(DESTDIR)$(HOME)/.config/profile.d/80-ssh-agent.sh
 
 .PHONY: system-install

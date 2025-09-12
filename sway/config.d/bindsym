@@ -15,3 +15,8 @@
 #
 	# Lock session
 	bindsym $mod+Mod1+Control+l exec "swaylock --color 000000ff"
+
+	# Player controls
+	bindsym --locked XF86AudioPlay exec playerctl play-pause
+	bindsym --locked XF86AudioNext exec playerctl next
+	bindsym --locked XF86AudioPrev exec playerctl previous

@@ -1,0 +1,10 @@
+#
+# Move around workspaces:
+#
+	# Move workspace to left/right output
+	bindsym $mod+m move workspace to output right
+	bindsym $mod+Shift+m move workspace to output left
+
+	# Move workspace to up/down output
+	bindsym $mod+n move workspace to output up
+	bindsym $mod+Shift+n move workspace to output down

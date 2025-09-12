@@ -7,4 +7,5 @@ user-install:
 	install -D -m644 config.d/systemd $(DESTDIR)$(HOME)/.config/sway/config.d/systemd
 	install -D -m644 config.d/output $(DESTDIR)$(HOME)/.config/sway/config.d/output
 	install -D -m644 config.d/input $(DESTDIR)$(HOME)/.config/sway/config.d/input
+	install -D -m644 config.d/bindsym $(DESTDIR)$(HOME)/.config/sway/config.d/bindsym
 	install -D -m644 user/sway-session.target $(DESTDIR)$(HOME)/.config/systemd/user/sway-session.target

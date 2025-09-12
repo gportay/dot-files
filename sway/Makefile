@@ -4,6 +4,7 @@ all:
 .PHONY: user-install
 user-install:
 	install -D -m644 config $(DESTDIR)$(HOME)/.config/sway/config
+	install -D -m644 config.d/xwayland $(DESTDIR)$(HOME)/.config/sway/config.d/xwayland
 	install -D -m644 config.d/systemd $(DESTDIR)$(HOME)/.config/sway/config.d/systemd
 	install -D -m644 config.d/output $(DESTDIR)$(HOME)/.config/sway/config.d/output
 	install -D -m644 config.d/input $(DESTDIR)$(HOME)/.config/sway/config.d/input

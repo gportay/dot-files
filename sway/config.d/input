@@ -1,0 +1,5 @@
+# localectl list-x11-keymap-variants
+input * {
+    xkb_layout "us"
+    xkb_variant "mac"
+}

@@ -1,2 +1,3 @@
 source $HOME/.vim/after/vim-plug.vim
+source $HOME/.vim/after/fzf.vim
 source $HOME/.vim/after/tig-explorer.vim

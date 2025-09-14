@@ -15,3 +15,6 @@ user-install:
 	install -D -m644 config.d/bindsym $(DESTDIR)$(HOME)/.config/sway/config.d/bindsym
 	install -D -m644 config.d/assign $(DESTDIR)$(HOME)/.config/sway/config.d/assign
 	install -D -m644 user/sway-session.target $(DESTDIR)$(HOME)/.config/systemd/user/sway-session.target
+
+.PHONY: system-install
+system-install:
